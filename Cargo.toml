@@ -1,0 +1,22 @@
+[package]
+name = "backups"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4.22"
+serde = { version = "1.0.210", features = ["derive"] }
+serde_derive = "1.0.210"
+sha2 = { version = "0.10.8" }
+uuid = { version = "1.10.0", features = ["v4"] }
+rayon = "1.10.0"
+chrono = "0.4.38"
+walkdir = "2.5.0"
+zip = { version = "2.2.0" }
+hex = "0.4.3"
+tokio = { version = "1.40.0", features = ["full", "time"] }
+cron = "0.12.1"
+sqlite = "0.36.1"
+obsidian-cryptography = { git = "https://github.com/Obsidian-Minecraft-Server-Portal/cryptography.git" }
+obsidian-sqlite = { git = "https://github.com/Obsidian-Minecraft-Server-Portal/sqlite.git" }
+obsidian-zip = { git = "https://github.com/Obsidian-Minecraft-Server-Portal/zip.git" }
